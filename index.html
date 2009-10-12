@@ -1,0 +1,50 @@
+<html>
+<head>
+
+<script type="text/javascript" src="tagcloud.js"></script>
+
+<style type="text/css">
+#tagcloud { 
+    font-size: 12pt;
+    width: 300px; 
+    border: 1px solid #444444;
+}
+</style>
+
+</head>
+
+<body>
+
+<div id="tagcloud"></div>
+
+<script type="text/javascript">
+var cloud = new TagCloud({
+    target : 'tagcloud',
+    template : '<span style="font-size: #{size}"><a href="http://journals.com?tag=#{tag}">#{tag}</a></span>',
+    data   : {
+        'lorem': '23',
+        'ipsum': '123',
+        'dolor': '64',
+        'sit': '9',
+        'amet': '53',
+        'consectetuer': '73',
+        'adipiscing': '34',
+        'elit': '12',
+        'sed': '92',
+        'ullamcorper': '7',
+        'arcu': '47',
+        'lacinia': '90',
+        'lacus': '32',
+        'aliquam': '21',
+        'tristique': '12',
+        'adipiscing': '45',
+        'pede': '56',
+        'proin': '10',
+        'porta': '67'
+    }
+});
+</script>
+
+
+</body>
+</html>
